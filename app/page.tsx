@@ -59,7 +59,7 @@ export default function Home() {
           <div className="flex flex-col gap-12 items-start">
             <div className="space-y-6">
               <div className="space-y-2">
-                <p className="text-sm uppercase tracking-widest font-semibold text-accent">Hello! My name is</p>
+                <p className="text-sm uppercase tracking-widest font-semibold text-accent">Welcome to my portfolio</p>
                 <h1 className="text-7xl md:text-8xl font-bold leading-tight text-balance">
                   Paul Christian<br /><span className="text-accent">Labor</span>
                 </h1>
@@ -107,7 +107,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-32 px-8 border-t border-border bg-linear-to-b from-background to-card/30">
+      <section id="about" className="py-32 px-8 border-t border-border bg-gradient-to-b from-background to-card/30">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-4 mb-16">
             <div className="w-1 h-12 bg-accent rounded-full"></div>
@@ -148,21 +148,21 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
             {[
               {
-                title: 'Personal Website',
-                description: 'A personal portfolio website designed to present my IT background, web projects, and ongoing growth in web development.',
-                tags: ['HTML', 'CSS', 'JavaScript'],
+                title: 'Project One',
+                description: 'A modern web application built with React and Node.js, featuring real-time data synchronization and intuitive user interface.',
+                tags: ['React', 'Node.js', 'PostgreSQL'],
                 url: 'https://example.com/project-one',
               },
               {
-                title: 'Coffee Shop Website',
-                description: 'A mock coffee shop website built to practice responsive design, layout structuring, and front-end fundamentals.',
-                tags: ['HTML', 'CSS', 'JavaScript'],
+                title: 'Project Two',
+                description: 'Full-stack e-commerce platform with payment integration, inventory management, and comprehensive admin dashboard.',
+                tags: ['Next.js', 'Stripe', 'Tailwind CSS'],
                 url: 'https://example.com/project-two',
               },
               {
-                title: 'Portfolio Website designed by v0',
-                description: 'A personal portfolio website built and deployed using v0, focusing on performance, responsiveness, and clean structure.',
-                tags: ['TypeScript', 'ReactJS', 'NextJS'],
+                title: 'Project Three',
+                description: 'Mobile-first design system and component library for a growing startup, ensuring consistency across products.',
+                tags: ['TypeScript', 'Storybook', 'Design System'],
                 url: 'https://example.com/project-three',
               },
               {
@@ -221,6 +221,21 @@ export default function Home() {
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest text-secondary hover:text-accent hover:border-b-2 hover:border-accent pb-1 transition-all duration-200">
                 LinkedIn
               </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest text-secondary hover:text-accent hover:border-b-2 hover:border-accent pb-1 transition-all duration-200">
+                Twitter
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest text-secondary hover:text-accent hover:border-b-2 hover:border-accent pb-1 transition-all duration-200">
+                Facebook
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest text-secondary hover:text-accent hover:border-b-2 hover:border-accent pb-1 transition-all duration-200">
+                Instagram
+              </a>
+              <a href="https://threads.net" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest text-secondary hover:text-accent hover:border-b-2 hover:border-accent pb-1 transition-all duration-200">
+                Threads
+              </a>
+              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest text-secondary hover:text-accent hover:border-b-2 hover:border-accent pb-1 transition-all duration-200">
+                TikTok
+              </a>
             </div>
           </div>
         </div>
@@ -229,7 +244,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-border py-12 px-8">
         <div className="max-w-7xl mx-auto text-center text-secondary text-sm">
-          <p>Design with &#x2665; by Paul Christian Labor.</p>
+          <p>&copy; 2024 Paul Christian Labor. All rights reserved.</p>
         </div>
       </footer>
     </main>
