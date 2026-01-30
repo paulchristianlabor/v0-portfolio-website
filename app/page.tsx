@@ -107,7 +107,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-32 px-8 border-t border-border bg-gradient-to-b from-background to-card/30">
+      <section id="about" className="py-32 px-8 border-t border-border bg-linear-to-b from-background to-card/30">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-4 mb-16">
             <div className="w-1 h-12 bg-accent rounded-full"></div>
