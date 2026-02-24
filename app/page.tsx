@@ -148,22 +148,22 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
             {[
               {
-                title: 'Project One',
-                description: 'A modern web application built with React and Node.js, featuring real-time data synchronization and intuitive user interface.',
-                tags: ['React', 'Node.js', 'PostgreSQL'],
-                url: 'https://example.com/project-one',
+                title: 'Personal Portfolio',
+                description: 'Responsive portfolio website built with HTML, CSS, and JavaScript, featuring interactive navigation, smooth scrolling, and a clean, modern design optimized for mobile, tablet, and desktop devices.',
+                tags: ['React', 'CSS', 'Javascript'],
+                url: '#',
               },
               {
-                title: 'Project Two',
-                description: 'Full-stack e-commerce platform with payment integration, inventory management, and comprehensive admin dashboard.',
-                tags: ['Next.js', 'Stripe', 'Tailwind CSS'],
-                url: 'https://example.com/project-two',
+                title: 'Coffee Shop',
+                description: 'Coffee shop website created with HTML, CSS, and JavaScript, showcasing menu sections, image gallery, smooth animations, and a warm, brand-focused design with responsive layout and UI interactions.',
+                tags: ['HTML', 'CSS', 'Javascript'],
+                url: '#',
               },
               {
-                title: 'Project Three',
-                description: 'Mobile-first design system and component library for a growing startup, ensuring consistency across products.',
-                tags: ['TypeScript', 'Storybook', 'Design System'],
-                url: 'https://example.com/project-three',
+                title: 'Personal Portfolio created with v0',
+                description: 'Modern portfolio developed using Next.js, React, TypeScript, and Tailwind CSS, featuring reusable components, responsive design, optimized performance, and a scalable architecture ready for deployment.',
+                tags: ['Next', 'React', ' Typescript', 'Tailwind CSS'],
+                url: '#',
               },
               {
                 title: 'Project Four',
@@ -209,7 +209,7 @@ export default function Home() {
               I'm always interested in hearing about new projects and opportunities. Feel free to reach out if you'd like to collaborate or just chat about web development.
             </p>
             <a
-              href="mailto:paul@example.com"
+              href="#"
               className="px-10 py-4 bg-accent text-accent-foreground rounded font-semibold hover:shadow-lg hover:shadow-accent/30 transition-all duration-200 transform hover:scale-105"
             >
               Send me an Email
