@@ -221,20 +221,8 @@ export default function Home() {
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest text-secondary hover:text-accent hover:border-b-2 hover:border-accent pb-1 transition-all duration-200">
                 LinkedIn
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest text-secondary hover:text-accent hover:border-b-2 hover:border-accent pb-1 transition-all duration-200">
-                Twitter
-              </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest text-secondary hover:text-accent hover:border-b-2 hover:border-accent pb-1 transition-all duration-200">
-                Facebook
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest text-secondary hover:text-accent hover:border-b-2 hover:border-accent pb-1 transition-all duration-200">
-                Instagram
-              </a>
-              <a href="https://threads.net" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest text-secondary hover:text-accent hover:border-b-2 hover:border-accent pb-1 transition-all duration-200">
-                Threads
-              </a>
-              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest text-secondary hover:text-accent hover:border-b-2 hover:border-accent pb-1 transition-all duration-200">
-                TikTok
+              <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest text-secondary hover:text-accent hover:border-b-2 hover:border-accent pb-1 transition-all duration-200">
+                X
               </a>
             </div>
           </div>
