@@ -150,7 +150,7 @@ export default function Home() {
               {
                 title: 'Personal Portfolio',
                 description: 'Responsive portfolio website built with HTML, CSS, and JavaScript, featuring interactive navigation, smooth scrolling, and a clean, modern design optimized for mobile, tablet, and desktop devices.',
-                tags: ['React', 'CSS', 'Javascript'],
+                tags: ['HTML', 'CSS', 'Javascript'],
                 url: '#',
               },
               {
@@ -167,9 +167,9 @@ export default function Home() {
               },
               {
                 title: 'Project Four',
-                description: 'Data visualization dashboard helping teams analyze complex metrics with interactive charts and real-time updates.',
-                tags: ['React', 'D3.js', 'WebSockets'],
-                url: 'https://example.com/project-four',
+                description: 'Working on it.',
+                tags: ['HTML', 'CSS', 'Javascript'],
+                url: '#',
               },
             ].map((project, i) => (
               <a
