@@ -54,60 +54,75 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-40 pb-32 px-8 border-b border-border">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col gap-12 items-start">
-            <div className="space-y-6">
-              <div className="space-y-2">
-                <p className="text-sm uppercase tracking-widest font-semibold text-accent">Welcome to my portfolio</p>
-                <h1 className="text-7xl md:text-8xl font-bold leading-tight text-balance">
-                  Paul Christian<br /><span className="text-accent">Labor</span>
-                </h1>
+      <section className="pt-40 pb-32 px-8 border-b border-border relative overflow-hidden">
+        {/* Blended background gradient */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background to-blue-500/20 pointer-events-none" />
+        
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Content */}
+            <div className="flex flex-col gap-12">
+              <div className="space-y-6 max-w-2xl">
+                <div className="space-y-2">
+                  <p className="text-sm uppercase tracking-widest font-semibold text-accent">Welcome to my portfolio</p>
+                  <h1 className="text-7xl md:text-7xl font-bold leading-tight text-balance">
+                    Paul Christian Labor
+                  </h1>
+                </div>
+                <p className="text-xl text-secondary leading-relaxed text-pretty">
+                  Crafting elegant, performant digital experiences. I design and build web applications that solve real problems with thoughtful interfaces and solid engineering.
+                </p>
               </div>
-              <p className="text-xl text-secondary max-w-2xl leading-relaxed text-pretty">
-                Crafting elegant, performant digital experiences. I design and build web applications that solve real problems with thoughtful interfaces and solid engineering.
-              </p>
-            </div>
 
-            <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4">
+                <a
+                  href="#contact"
+                  onClick={(e) => handleSmoothScroll(e, 'contact')}
+                  className="px-8 py-4 bg-accent text-accent-foreground rounded font-medium hover:opacity-85 transition-opacity duration-200 cursor-pointer w-fit"
+                >
+                  Get in Touch
+                </a>
+              </div>
+
+              {/* Scroll Indicator */}
               <a
-                href="#contact"
-                onClick={(e) => handleSmoothScroll(e, 'contact')}
-                className="px-8 py-4 bg-accent text-accent-foreground rounded font-medium hover:opacity-85 transition-opacity duration-200 w-fit cursor-pointer"
+                href="#about"
+                onClick={(e) => handleSmoothScroll(e, 'about')}
+                className="hover:text-accent transition-colors cursor-pointer group"
               >
-                Get in Touch
+                <svg
+                  className="w-5 h-5 text-secondary group-hover:text-accent transition-all duration-300 animate-pulse"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  style={{
+                    animation: 'slideDown 2s ease-in-out infinite'
+                  }}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                  />
+                </svg>
               </a>
             </div>
 
-            {/* Scroll Indicator */}
-            <a
-              href="#about"
-              onClick={(e) => handleSmoothScroll(e, 'about')}
-              className="mt-20 hover:text-accent transition-colors cursor-pointer group"
-            >
-              <svg
-                className="w-5 h-5 text-secondary group-hover:text-accent transition-all duration-300 animate-pulse"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                style={{
-                  animation: 'slideDown 2s ease-in-out infinite'
-                }}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                />
-              </svg>
-            </a>
+            {/* Character Image */}
+            <div className="flex justify-center items-center">
+              <img
+                src="/character-hero.jpg"
+                alt="Paul Christian Labor"
+                className="w-full max-w-sm rounded-full"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-32 px-8 border-t border-border bg-linear-to-b from-background to-card/30">
+      <section id="about" className="py-32 px-8 border-t border-border bg-gradient-to-b from-background to-card/30">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-4 mb-16">
             <div className="w-1 h-12 bg-accent rounded-full"></div>
@@ -149,26 +164,26 @@ export default function Home() {
             {[
               {
                 title: 'Personal Portfolio',
-                description: 'Responsive portfolio website built with HTML, CSS, and JavaScript, featuring interactive navigation, smooth scrolling, and a clean, modern design optimized for mobile, tablet, and desktop devices.',
-                tags: ['HTML', 'CSS', 'Javascript'],
+                description: 'Responsive personal portfolio built using HTML, CSS, and JavaScript, showcasing core web fundamentals, clean UI design, structured layout, and interactive elements to present my skills and projects professionally.',
+                tags: ['HTML', 'CSS', 'JavaScript'],
                 url: '#',
               },
               {
-                title: 'Coffee Shop',
-                description: 'Coffee shop website created with HTML, CSS, and JavaScript, showcasing menu sections, image gallery, smooth animations, and a warm, brand-focused design with responsive layout and UI interactions.',
-                tags: ['HTML', 'CSS', 'Javascript'],
+                title: 'Coffee Shop Website',
+                description: 'FulModern coffee shop website developed with HTML, CSS, and JavaScript, featuring organized sections, menu displays, responsive design, and interactive components tailored for a small business setup.',
+                tags: ['HTML', 'CSS', 'JavaScript'],
                 url: '#',
               },
               {
-                title: 'Personal Portfolio created with v0',
-                description: 'Modern portfolio developed using Next.js, React, TypeScript, and Tailwind CSS, featuring reusable components, responsive design, optimized performance, and a scalable architecture ready for deployment.',
-                tags: ['Next', 'React', ' Typescript', 'Tailwind CSS'],
+                title: 'AI Personal Portfolio',
+                description: 'Personal portfolio created using Vercel v0 AI with Next.js, React, Tailwind CSS, TypeScript, Radix UI, and shadcn, demonstrating component-based architecture and modern development practices.',
+                tags: ['Next.js', 'React', 'Tailwind', 'TypeScript', 'Radix UI', 'Shadcn'],
                 url: '#',
               },
               {
                 title: 'Project Four',
-                description: 'Working on it.',
-                tags: ['HTML', 'CSS', 'Javascript'],
+                description: 'Still in Progress',
+                tags: ['Still in Progress'],
                 url: '#',
               },
             ].map((project, i) => (
@@ -196,7 +211,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-32 px-8 border-t border-b border-border bg-linear-to-b from-background via-card/20 to-background">
+      <section id="contact" className="py-32 px-8 border-t border-b border-border bg-gradient-to-b from-background via-card/20 to-background">
         <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="w-1 h-8 bg-accent rounded-full"></div>
