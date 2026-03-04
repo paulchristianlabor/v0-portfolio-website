@@ -28,7 +28,7 @@ export default function Home() {
               <div className="space-y-6 max-w-2xl">
                 <div className="space-y-2">
                   <p className="text-sm uppercase tracking-widest font-semibold text-accent">Welcome to my portfolio</p>
-                  <h1 className="text-7xl md:text-8xl font-bold leading-tight text-balance">
+                  <h1 className="text-7xl md:text-7xl font-bold leading-tight text-balance">
                     Paul Christian<br /><span className="text-accent">Labor</span>
                   </h1>
                 </div>
@@ -77,7 +77,7 @@ export default function Home() {
               <img
                 src="/character-hero.jpg"
                 alt="Paul Christian Labor"
-                className="w-full max-w-sm rounded-lg"
+                className="w-full max-w-sm rounded-full"
               />
             </div>
           </div>
@@ -126,28 +126,28 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
             {[
               {
-                title: 'Project One',
-                description: 'A modern web application built with React and Node.js, featuring real-time data synchronization and intuitive user interface.',
-                tags: ['React', 'Node.js', 'PostgreSQL'],
-                url: 'https://example.com/project-one',
+                title: 'Personal Portfolio',
+                description: 'Responsive personal portfolio built using HTML, CSS, and JavaScript, showcasing core web fundamentals, clean UI design, structured layout, and interactive elements to present my skills and projects professionally.',
+                tags: ['HTML', 'CSS', 'JavaScript'],
+                url: '#',
               },
               {
-                title: 'Project Two',
-                description: 'Full-stack e-commerce platform with payment integration, inventory management, and comprehensive admin dashboard.',
-                tags: ['Next.js', 'Stripe', 'Tailwind CSS'],
-                url: 'https://example.com/project-two',
+                title: 'Coffee Shop Website',
+                description: 'FModern coffee shop website developed with HTML, CSS, and JavaScript, featuring organized sections, menu displays, responsive design, and interactive components tailored for a small business setup.',
+                tags: ['HTML', 'CSS', 'JavaScript'],
+                url: '#',
               },
               {
-                title: 'Project Three',
-                description: 'Mobile-first design system and component library for a growing startup, ensuring consistency across products.',
-                tags: ['TypeScript', 'Storybook', 'Design System'],
-                url: 'https://example.com/project-three',
+                title: 'AI Personal Portfolio',
+                description: 'Personal portfolio created using Vercel v0 AI with Next.js, React, Tailwind CSS, TypeScript, Radix UI, and shadcn, demonstrating component-based architecture and modern development practices.',
+                tags: ['Next.js', 'React', 'Tailwind', 'Typescript', 'Radix UI', 'shadcn'],
+                url: '#',
               },
               {
                 title: 'Project Four',
-                description: 'Data visualization dashboard helping teams analyze complex metrics with interactive charts and real-time updates.',
-                tags: ['React', 'D3.js', 'WebSockets'],
-                url: 'https://example.com/project-four',
+                description: ' Still in progress.',
+                tags: ['Still in progress'],
+                url: '#',
               },
             ].map((project, i) => (
               <a
@@ -187,7 +187,7 @@ export default function Home() {
               I'm always interested in hearing about new projects and opportunities. Feel free to reach out if you'd like to collaborate or just chat about web development.
             </p>
             <a
-              href="mailto:paul@example.com"
+              href="#"
               className="px-10 py-4 bg-accent text-accent-foreground rounded font-semibold hover:shadow-lg hover:shadow-accent/30 transition-all duration-200 transform hover:scale-105"
             >
               Send me an Email
@@ -206,28 +206,6 @@ export default function Home() {
               <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-accent transition-all duration-200 transform hover:scale-110">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.6l-5.17-6.75-5.91 6.75h-3.308l7.732-8.835L.424 2.25h6.7l4.68 6.182 5.64-6.182zM17.002 18.807h1.646L6.154 3.75H4.425l12.577 15.057z" />
-                </svg>
-              </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-accent transition-all duration-200 transform hover:scale-110">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                </svg>
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-accent transition-all duration-200 transform hover:scale-110">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" strokeWidth="2" />
-                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="currentColor" strokeWidth="2" />
-                  <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
-                </svg>
-              </a>
-              <a href="https://threads.net" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-accent transition-all duration-200 transform hover:scale-110">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" />
-                </svg>
-              </a>
-              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-accent transition-all duration-200 transform hover:scale-110">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.68v12.7a2.85 2.85 0 11-5.92-2.81 2.86 2.86 0 011.41 2.41V9.4a6.11 6.11 0 00-6.11 6.11v.24A6.12 6.12 0 009.88 22c.53 0 1.05-.04 1.56-.12.84.07 1.6.08 2.4 0 5.82-.34 10.16-5.2 10.16-11.05 0-.45-.03-.9-.09-1.34.51.08 1.01.12 1.52.12 5.83 0 10.55-4.72 10.55-10.55 0-4.58-3.63-8.35-8.2-8.58z" />
                 </svg>
               </a>
             </div>

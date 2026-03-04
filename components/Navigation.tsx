@@ -60,43 +60,58 @@ export default function Navigation() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden flex flex-col gap-1.5 p-2"
+          className="md:hidden flex flex-col gap-1.5 p-2 hover:opacity-80 transition-opacity duration-200"
           aria-label="Toggle menu"
         >
-          <span className={`w-6 h-0.5 bg-accent transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-2' : ''}`} />
-          <span className={`w-6 h-0.5 bg-accent transition-all duration-300 ${isOpen ? 'opacity-0' : ''}`} />
-          <span className={`w-6 h-0.5 bg-accent transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+          <span className={`w-6 h-0.5 bg-accent transition-all duration-500 ease-in-out ${isOpen ? 'rotate-45 translate-y-2' : ''}`} />
+          <span className={`w-6 h-0.5 bg-accent transition-all duration-500 ease-in-out ${isOpen ? 'opacity-0 scale-0' : ''}`} />
+          <span className={`w-6 h-0.5 bg-accent transition-all duration-500 ease-in-out ${isOpen ? '-rotate-45 -translate-y-2' : ''}`} />
         </button>
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-background border-t border-border">
-          <div className="max-w-7xl mx-auto px-8 py-6 flex flex-col gap-6">
-            <a
-              href="/#about"
-              onClick={(e) => handleSmoothScroll(e, 'about')}
-              className="text-sm uppercase tracking-widest text-secondary hover:text-accent transition-colors duration-200 cursor-pointer"
-            >
-              About
-            </a>
-            <a
-              href="/#work"
-              onClick={(e) => handleSmoothScroll(e, 'work')}
-              className="text-sm uppercase tracking-widest text-secondary hover:text-accent transition-colors duration-200 cursor-pointer"
-            >
-              Work
-            </a>
-            <a
-              href="/#contact"
-              onClick={(e) => handleSmoothScroll(e, 'contact')}
-              className="text-sm uppercase tracking-widest text-secondary hover:text-accent transition-colors duration-200 cursor-pointer"
-            >
-              Contact
-            </a>
-          </div>
+      <div
+        className={`md:hidden bg-background border-t border-border overflow-hidden transition-all duration-500 ease-in-out ${
+          isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+        }`}
+      >
+        <div className="max-w-7xl mx-auto px-8 py-6 flex flex-col gap-6">
+          <a
+            href="/#about"
+            onClick={(e) => handleSmoothScroll(e, 'about')}
+            className="text-sm uppercase tracking-widest text-secondary hover:text-accent transition-colors duration-200 cursor-pointer transform hover:translate-x-2 duration-200"
+          >
+            About
+          </a>
+          <a
+            href="/#work"
+            onClick={(e) => handleSmoothScroll(e, 'work')}
+            className="text-sm uppercase tracking-widest text-secondary hover:text-accent transition-colors duration-200 cursor-pointer transform hover:translate-x-2 duration-200"
+          >
+            Work
+          </a>
+          <a
+            href="/#contact"
+            onClick={(e) => handleSmoothScroll(e, 'contact')}
+            className="text-sm uppercase tracking-widest text-secondary hover:text-accent transition-colors duration-200 cursor-pointer transform hover:translate-x-2 duration-200"
+          >
+            Contact
+          </a>
         </div>
-      )}
+      </div>
+      
+      <style jsx>{`
+        @keyframes slideDown {
+          from {
+            opacity: 0;
+            transform: translateY(-10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
     </nav>
   )
 }
