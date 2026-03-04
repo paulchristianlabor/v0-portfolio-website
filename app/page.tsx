@@ -216,7 +216,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-border py-12 px-8">
         <div className="max-w-7xl mx-auto text-center text-secondary text-sm">
-          <p>&copy; 2026 Paul Christian Labor. All rights reserved.</p>
+          <p>&copy; Design and Built by Paul Christian Labor.</p>
         </div>
       </footer>
     </main>
