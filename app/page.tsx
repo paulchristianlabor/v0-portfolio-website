@@ -18,21 +18,19 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="pt-40 pb-32 px-8 border-b border-border relative overflow-hidden">
-        {/* Blended background gradient */}
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background to-blue-500/20 pointer-events-none" />
-        
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Content */}
-            <div className="flex flex-col gap-12">
+            <div className="flex flex-col gap-12 items-center md:items-start text-center md:text-left order-2 md:order-1">
               <div className="space-y-6 max-w-2xl">
                 <div className="space-y-2">
                   <p className="text-sm uppercase tracking-widest font-semibold text-accent">Welcome to my portfolio</p>
-                  <h1 className="text-7xl md:text-7xl font-bold leading-tight text-balance">
+                  <h1 className="text-5xl md:text-6xl font-bold leading-tight text-balance">
                     Paul Christian<br /><span className="text-accent">Labor</span>
                   </h1>
                 </div>
-                <p className="text-xl text-secondary leading-relaxed text-pretty">
+                <p className="text-lg text-secondary leading-relaxed text-pretty">
                   Crafting elegant, performant digital experiences. I design and build web applications that solve real problems with thoughtful interfaces and solid engineering.
                 </p>
               </div>
@@ -73,11 +71,11 @@ export default function Home() {
             </div>
 
             {/* Character Image */}
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center order-1 md:order-2">
               <img
                 src="/character-hero.jpg"
                 alt="Paul Christian Labor"
-                className="w-full max-w-sm rounded-full"
+                className="w-36 h-36 md:w-80 md:h-80 rounded-full object-cover"
               />
             </div>
           </div>
@@ -133,7 +131,7 @@ export default function Home() {
               },
               {
                 title: 'Coffee Shop Website',
-                description: 'FModern coffee shop website developed with HTML, CSS, and JavaScript, featuring organized sections, menu displays, responsive design, and interactive components tailored for a small business setup.',
+                description: 'Modern coffee shop website developed with HTML, CSS, and JavaScript, featuring organized sections, menu displays, responsive design, and interactive components tailored for a small business setup.',
                 tags: ['HTML', 'CSS', 'JavaScript'],
                 url: '#',
               },
@@ -145,7 +143,7 @@ export default function Home() {
               },
               {
                 title: 'Project Four',
-                description: ' Still in progress.',
+                description: 'Still in progress.',
                 tags: ['Still in progress'],
                 url: '#',
               },
@@ -216,7 +214,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-border py-12 px-8">
         <div className="max-w-7xl mx-auto text-center text-secondary text-sm">
-          <p>&copy; Design and Built by Paul Christian Labor.</p>
+          <p>Design and Built by Paul Christian Labor</p>
         </div>
       </footer>
     </main>
