@@ -124,49 +124,69 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
             {[
               {
-                title: 'Personal Portfolio',
-                description: 'Responsive personal portfolio built using HTML, CSS, and JavaScript, showcasing core web fundamentals, clean UI design, structured layout, and interactive elements to present my skills and projects professionally.',
-                tags: ['HTML', 'CSS', 'JavaScript'],
-                url: '#',
-              },
-              {
                 title: 'Coffee Shop Website',
-                description: 'Modern coffee shop website developed with HTML, CSS, and JavaScript, featuring organized sections, menu displays, responsive design, and interactive components tailored for a small business setup.',
-                tags: ['HTML', 'CSS', 'JavaScript'],
-                url: '#',
+                description: 'Modern coffee shop landing page with clean layout, engaging visuals, and responsive sections built for a small business experience.',
+                tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Live'],
+                url: 'https://coffee-shop.paulchristianlabor.com',
               },
               {
-                title: 'AI Personal Portfolio',
-                description: 'Personal portfolio created using Vercel v0 AI with Next.js, React, Tailwind CSS, TypeScript, Radix UI, and shadcn, demonstrating component-based architecture and modern development practices.',
-                tags: ['Next.js', 'React', 'Tailwind', 'Typescript', 'Radix UI', 'shadcn'],
-                url: '#',
+                title: 'Gamer Landing Page',
+                description: 'High-energy gaming landing page focused on bold presentation, interactive sections, and modern frontend structure.',
+                tags: ['React', 'TypeScript', 'Vite', 'Live'],
+                url: 'https://gamer.paulchristianlabor.com',
               },
               {
-                title: 'Project Four',
-                description: 'Still in progress.',
-                tags: ['Still in progress'],
-                url: '#',
+                title: 'In Progress',
+                description: 'This project is currently in progress and will be published here once it is ready.',
+                tags: ['In Progress'],
               },
-            ].map((project, i) => (
-              <a
-                key={i}
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-8 bg-card rounded border-2 border-border hover:border-accent transition-all duration-200 group overflow-hidden relative block"
-              >
-                <div className="absolute top-0 left-0 w-1 h-0 group-hover:h-full bg-accent transition-all duration-300"></div>
-                <h3 className="text-xl font-semibold mb-4 group-hover:text-accent transition-colors duration-200 relative z-10">{project.title}</h3>
-                <p className="text-secondary mb-6 leading-relaxed text-sm relative z-10">{project.description}</p>
-                <div className="flex flex-wrap gap-2 relative z-10">
-                  {project.tags.map((tag) => (
-                    <span key={tag} className="px-3 py-1 bg-accent/10 text-secondary rounded text-xs uppercase tracking-wide border border-accent/30 group-hover:border-accent group-hover:text-accent transition-all duration-200">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </a>
-            ))}
+              {
+                title: 'In Progress',
+                description: 'This project is currently in progress and will be published here once it is ready.',
+                tags: ['In Progress'],
+              },
+            ].map((project, i) => {
+              if (!project.url) {
+                return (
+                  <div
+                    key={i}
+                    className="p-8 bg-card/70 rounded border-2 border-border/70 transition-all duration-200 group overflow-hidden relative block"
+                  >
+                    <div className="absolute top-0 left-0 w-1 h-full bg-border/50 transition-all duration-300"></div>
+                    <h3 className="text-xl font-semibold mb-4 text-secondary relative z-10">{project.title}</h3>
+                    <p className="text-secondary mb-6 leading-relaxed text-sm relative z-10">{project.description}</p>
+                    <div className="flex flex-wrap gap-2 relative z-10">
+                      {project.tags.map((tag) => (
+                        <span key={tag} className="px-3 py-1 bg-accent/10 text-secondary rounded text-xs uppercase tracking-wide border border-accent/30">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )
+              }
+
+              return (
+                <a
+                  key={i}
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-8 bg-card rounded border-2 border-border hover:border-accent transition-all duration-200 group overflow-hidden relative block"
+                >
+                  <div className="absolute top-0 left-0 w-1 h-0 group-hover:h-full bg-accent transition-all duration-300"></div>
+                  <h3 className="text-xl font-semibold mb-4 group-hover:text-accent transition-colors duration-200 relative z-10">{project.title}</h3>
+                  <p className="text-secondary mb-6 leading-relaxed text-sm relative z-10">{project.description}</p>
+                  <div className="flex flex-wrap gap-2 relative z-10">
+                    {project.tags.map((tag) => (
+                      <span key={tag} className="px-3 py-1 bg-accent/10 text-secondary rounded text-xs uppercase tracking-wide border border-accent/30 group-hover:border-accent group-hover:text-accent transition-all duration-200">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </a>
+              )
+            })}
           </div>
         </div>
       </section>
