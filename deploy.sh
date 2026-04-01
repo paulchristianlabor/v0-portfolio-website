@@ -7,11 +7,11 @@ echo "🚀 Starting deployment to GitHub Pages..."
 
 # Install dependencies
 echo "📦 Installing dependencies..."
-npm install
+pnpm install
 
 # Build the project
 echo "🏗️ Building project..."
-npm run build
+pnpm run build
 
 # Initialize git if not already done
 if [ ! -d ".git" ]; then
